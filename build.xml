@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<project name="stockwatcher">
+
+<target name="deploy-war">
+	<delete>
+    	<fileset dir="." includes="war/*.war"/>
+  	</delete>
+	<war destfile="war/StockWatcher.war">
+	  <fileset dir="war"/>
+	  
+	</war>
+	
+	<copy todir="C:\\development\tomcat\\apache-tomcat-7.0.57\\webapps">
+		<fileset dir="war">
+			<include name="**/*.war"></include>
+		</fileset>
+	</copy>
+
+</target>
+
+</project>

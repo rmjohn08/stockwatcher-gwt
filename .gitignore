@@ -1,0 +1,6 @@
+*.class
+war/stockwatcher/gwt/clean/clean.css
+war/stockwatcher/
+war/com.google.gwt.sample.stockwatcher.StockWatcher.JUnit/
+war/WEB-INF/deploy/
+gwt-unitCache/
